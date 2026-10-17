@@ -1,0 +1,31 @@
+{
+  "repo": "pgn-clock-ledger",
+  "module": "pgn_clock_ledger",
+  "units": 20,
+  "capability": "Reconstruct per-ply clock differences from a bounded annotated PGN mainline without hiding missing evidence.",
+  "user": "Chess study authors auditing recorded clock annotations in a short standard-start game.",
+  "pain": "Missing annotations or an unexplained clock increase should not silently become zero thinking time.",
+  "query": "PGN parser",
+  "leader": "niklasf/python-chess",
+  "comparables": [
+    "niklasf/python-chess",
+    "bhlangonijr/chesslib",
+    "mliebelt/pgn-parser"
+  ],
+  "quick": "pgn-clock-ledger example.pgn",
+  "expected": "Exit 0 with elapsed milliseconds [3000,2000,3000,5000]; known totals are white 6000 and black 7000 under the stated increment convention.",
+  "contract": "One UTF-8 PGN, mandatory simple integer TimeControl base+increment, standard initial position and alternating SAN-like mainline labels. Brace [%clk H:MM:SS[.fff]] annotations are exact milliseconds. Assumption: each annotation is after its move and that move\u2019s increment, including the first captured move. elapsed = previous same-side clock + increment - current clock. Missing evidence invalidates the next same-side difference until a new baseline is captured. An increase exceeding increment is a finding with no elapsed value. Balanced variations, semicolon comments and NAGs do not contribute clock evidence; header/body result agreement is enforced.",
+  "limits": "128 KiB, 64 headers, 10,000 plies, variation depth 32, token length 64; base 1\u201386400 seconds and increment 0\u20133600. No multi-stage/delay controls, FEN starts, variants, multiple games or sub-millisecond clocks. Move labels are not checked for chess legality. No engine, cheating, flag, network lag or actual-thinking-time inference; totals cover only computed evidence.",
+  "acceptance": "Reproduce increment arithmetic, fractional milliseconds, per-side missing-clock resynchronization, ignored variations, and reject duplicate/leading clocks, malformed controls, wrong move numbers and result conflicts.",
+  "notes": "python-chess already supports PGN clock and elapsed annotations and legal move handling. Chesslib offers a broader Java chess model; mliebelt/pgn-parser produces a structured PGN representation. Their broader capabilities are not replaced. Our dependency-free evidence ledger has stricter bounded input and deliberately does not validate legal chess.",
+  "alternatives": "Use python-chess clock accessors, Chesslib or pgn-parser and implement the desired accounting convention.",
+  "overlap": "No existing owned chess/PGN project was found. Other timing tools handle different input domains and do not parse chess mainlines and per-side clock evidence.",
+  "reference": "niklasf/python-chess",
+  "topics": [
+    "pgn",
+    "chess",
+    "python",
+    "clock",
+    "data-validation"
+  ]
+}

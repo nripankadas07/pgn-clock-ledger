@@ -1,0 +1,201 @@
+{
+  "comparables": [
+    {
+      "full": "niklasf/python-chess",
+      "url": "https://github.com/niklasf/python-chess",
+      "stars": 2892,
+      "default_branch": "master",
+      "pushed_at": "2026-08-22T13:17:47Z",
+      "updated_at": "2026-10-15T05:46:53Z",
+      "archived": false,
+      "license": "GPL-3.0",
+      "description": "A chess library for Python, with move generation and validation, PGN parsing and writing, Polyglot opening book reading, Gaviota tablebase probing, Syzygy tablebase probing, and UCI/XBoard engine communication",
+      "observed": "2026-10-17T06:09:54.231Z",
+      "readme": {
+        "path": "README.rst",
+        "sha": "e4b2166f33c74039f3afd875c877669f9e7ce227"
+      },
+      "issues": [
+        {
+          "number": 1215,
+          "title": "fix(atomic): validate en passant with variant rules",
+          "url": "https://github.com/niklasf/python-chess/pull/1215",
+          "pull_request": true
+        },
+        {
+          "number": 1214,
+          "title": "AtomicBoard: has_legal_en_passant(), generate_legal_ep() and fen() do not use Atomic legality",
+          "url": "https://github.com/niklasf/python-chess/issues/1214",
+          "pull_request": false
+        },
+        {
+          "number": 1213,
+          "title": "Fix `GameNode.set_eval()` dropping mate 0 scores",
+          "url": "https://github.com/niklasf/python-chess/pull/1213",
+          "pull_request": true
+        },
+        {
+          "number": 1212,
+          "title": "examples: add clocked_perft.py (timed perft, canonical node tables)",
+          "url": "https://github.com/niklasf/python-chess/pull/1212",
+          "pull_request": true
+        },
+        {
+          "number": 1210,
+          "title": "`SQUARES_180` is a misleading name",
+          "url": "https://github.com/niklasf/python-chess/issues/1210",
+          "pull_request": false
+        }
+      ],
+      "observation_scope": "Current metadata, README and up to five issue/PR records read; no exhaustive global ranking or competitor execution benchmark."
+    },
+    {
+      "full": "bhlangonijr/chesslib",
+      "url": "https://github.com/bhlangonijr/chesslib",
+      "stars": 297,
+      "default_branch": "master",
+      "pushed_at": "2026-07-06T13:53:40Z",
+      "updated_at": "2026-10-12T10:52:35Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": "chess library for legal move generation, FEN/PGN parsing and more",
+      "observed": "2026-10-17T06:09:54.251Z",
+      "readme": {
+        "path": "README.md",
+        "sha": "b425328266106057f84c8e9566e5b735af2d8ddd"
+      },
+      "issues": [
+        {
+          "number": 141,
+          "title": "Board.doMove(String) documented as SAN but silently accepts LAN notation",
+          "url": "https://github.com/bhlangonijr/chesslib/issues/141",
+          "pull_request": false
+        },
+        {
+          "number": 131,
+          "title": "Board.doMove/isMoveLegal allows illegal pawn forward capture into occupied square",
+          "url": "https://github.com/bhlangonijr/chesslib/issues/131",
+          "pull_request": false
+        },
+        {
+          "number": 114,
+          "title": "Check if a move is pseudo-legal without generating the list of pseudo-legal moves",
+          "url": "https://github.com/bhlangonijr/chesslib/issues/114",
+          "pull_request": false
+        },
+        {
+          "number": 109,
+          "title": "PGN changes when loading then running game.toPgn",
+          "url": "https://github.com/bhlangonijr/chesslib/issues/109",
+          "pull_request": false
+        },
+        {
+          "number": 94,
+          "title": "Higher coverage of unit tests",
+          "url": "https://github.com/bhlangonijr/chesslib/issues/94",
+          "pull_request": false
+        }
+      ],
+      "observation_scope": "Current metadata, README and up to five issue/PR records read; no exhaustive global ranking or competitor execution benchmark."
+    },
+    {
+      "full": "mliebelt/pgn-parser",
+      "url": "https://github.com/mliebelt/pgn-parser",
+      "stars": 78,
+      "default_branch": "main",
+      "pushed_at": "2026-10-14T15:29:14Z",
+      "updated_at": "2026-10-14T15:29:10Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": "Javascript library to allow reading of a PGN (Portable Game Notation) chess game notation, and providing the result as JSON.",
+      "observed": "2026-10-17T06:09:54.889Z",
+      "readme": {
+        "path": "README.md",
+        "sha": "bffc807d6fd3e7bce16b7a743aa949af003a4bc6"
+      },
+      "issues": [
+        {
+          "number": 877,
+          "title": "Bump rollup from 4.64.3 to 4.64.5",
+          "url": "https://github.com/mliebelt/pgn-parser/pull/877",
+          "pull_request": true
+        },
+        {
+          "number": 515,
+          "title": "Optional treating of multiple comments as an array rather than concatenating",
+          "url": "https://github.com/mliebelt/pgn-parser/issues/515",
+          "pull_request": false
+        },
+        {
+          "number": 488,
+          "title": "Migrate mocha tests to uvu",
+          "url": "https://github.com/mliebelt/pgn-parser/issues/488",
+          "pull_request": false
+        },
+        {
+          "number": 112,
+          "title": "Allow foreign piece characters used",
+          "url": "https://github.com/mliebelt/pgn-parser/issues/112",
+          "pull_request": false
+        },
+        {
+          "number": 78,
+          "title": "Define better file structure for project",
+          "url": "https://github.com/mliebelt/pgn-parser/issues/78",
+          "pull_request": false
+        }
+      ],
+      "observation_scope": "Current metadata, README and up to five issue/PR records read; no exhaustive global ranking or competitor execution benchmark."
+    }
+  ],
+  "code_references": [
+    {
+      "repo": "niklasf/python-chess",
+      "sha": "3d4d7e5ff8b4eb3af6c16448007888436b1208f6",
+      "url": "https://github.com/niklasf/python-chess/blob/master/chess/pgn.py",
+      "observed": "2026-10-17T06:25:16.017Z"
+    }
+  ],
+  "queries": [
+    {
+      "query": "VCD waveform",
+      "url": "https://github.com/search?q=VCD+waveform&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:07:55.959Z"
+    },
+    {
+      "query": "mesh analysis",
+      "url": "https://github.com/search?q=mesh%20analysis&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:07:56.979Z"
+    },
+    {
+      "query": "modbus",
+      "url": "https://github.com/search?q=modbus&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:07:57.966Z"
+    },
+    {
+      "query": "cue splitter",
+      "url": "https://github.com/search?q=cue%20splitter&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:07:58.843Z"
+    },
+    {
+      "query": "PGN parser",
+      "url": "https://github.com/search?q=PGN%20parser&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:07:59.739Z"
+    },
+    {
+      "query": "3D data processing",
+      "url": "https://github.com/search?q=3D+data+processing&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:25:19.570Z"
+    },
+    {
+      "query": "modbus library",
+      "url": "https://github.com/search?q=modbus+library&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:26:25.149Z"
+    },
+    {
+      "query": "audio CD image",
+      "url": "https://github.com/search?q=audio+CD+image&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:26:31.848Z"
+    }
+  ]
+}

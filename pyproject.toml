@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pgn-clock-ledger"
+version = "0.1.0"
+description = "Reconstruct per-ply clock differences from a bounded annotated PGN mainline without hiding missing evidence."
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+pgn-clock-ledger = "pgn_clock_ledger:main"
+
+[tool.setuptools]
+py-modules = ["pgn_clock_ledger"]
